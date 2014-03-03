@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 	private String title = "";
 	private double rating = 0.0;
 	private int year = 0;
-	//
+	//asdt
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
