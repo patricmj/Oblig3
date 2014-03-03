@@ -23,7 +23,8 @@ public class MainActivity extends Activity {
 	TextView httpStuff;
 	HttpClient client;
 	JSONObject jsonObj;
-	String title = "";
+	private String title = "";
+	private double rating = 0.0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ public class MainActivity extends Activity {
 		httpStuff = (TextView) findViewById(R.id.httpStuff);
 		
 		client = new DefaultHttpClient();
-		new Read().execute("rating");
+		new Read().execute("title");
  	}
 
 	@Override
